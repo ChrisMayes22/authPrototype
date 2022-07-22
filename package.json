@@ -1,0 +1,9 @@
+{
+  "name": "encryptPassword",
+  "version": "1.0.0",
+  "description": "Provides an authentication layer",
+  "main": "index.js",
+  "author": "Chris Mayes",
+  "license": "MIT",
+  "private": false
+}
