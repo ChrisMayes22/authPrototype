@@ -87,6 +87,7 @@ app.post('/users/login', (req, res) => {
     });
 })
 
+// server port:
 const PORT = process.env.NODE_ENV || 5000;
 
 app.listen(PORT, e => {
