@@ -34,6 +34,7 @@ Once running, the server will expect HTTP POST requests. The POST body should ha
 ```
 
 The HTTP request should have a Content-Type header of json.
+By default, the server will listen at localhost:5000 or at process.env.NODE_ENV if it is defined.
 An example POST request using the fetch API might look like the following:
 
 ```
@@ -45,7 +46,7 @@ const options = {
     method: 'POST',
     body: JSON.stringify( params )  
 };
-fetch('https://127.0.0.1/users/create', options )
+fetch('https://127.0.0.1/5000/users/create', options )
     .then( response => response.json() )
     .then( response => {
         // Do something with response.
@@ -56,7 +57,7 @@ fetch('https://127.0.0.1/users/create', options )
 
 Scripts can be run directly from the console using the following syntax:
 
-`node ./scripts/[script name]`
+`node ./scripts/[script filename]`
 
 scripts/getAllClients.mjs will print all rows from the database to the console.
 scripts/ResetDB.mjs will drop and then re-create the clients table from the db
