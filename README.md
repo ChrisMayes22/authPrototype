@@ -7,6 +7,9 @@ The runtime environment should include node v. 14 or later.
 Yarn or npm may be used as package managers, but the .lock file present was created with yarn
 See package.json for other dependencies
 
+For npm, run `npm install` in the root directory to install dependencies.
+For yarn, run `yarn` in the root directory
+
 # INTERFACES
 
 This project has two main interfaces: The server API and the scripts in the `scripts` directory.
