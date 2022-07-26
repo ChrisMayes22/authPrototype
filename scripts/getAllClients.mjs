@@ -2,5 +2,5 @@
 
 import { DB } from '../db/db.js';
 
-const db = new DB('./clients.db');
+const db = new DB('../clients.db');
 db.getAllRows();

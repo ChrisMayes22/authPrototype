@@ -8,7 +8,7 @@
 import { DB } from '../db/db.js';
 import inquirer from 'inquirer';
 
-const db = new DB('./clients.db');
+const db = new DB('../clients.db');
 
 inquirer
   .prompt([
