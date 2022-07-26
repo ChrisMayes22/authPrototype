@@ -53,6 +53,13 @@ fetch('http://127.0.0.1/5000/users/create', options )
 });
 ```
 
+### Receiving data
+
+The server's response will be piped through the network connection.
+How this is handled on the client's end will depend on the HTTP
+library used, but it would be contained in the response object 
+in the example above
+
 ## Scripts
 
 Scripts can be run directly from the console using the following syntax:
